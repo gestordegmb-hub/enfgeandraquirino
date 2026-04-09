@@ -5,6 +5,7 @@ import ServicesSection from "@/components/ServicesSection";
 import TechnologiesSection from "@/components/TechnologiesSection";
 import DifferentialsSection from "@/components/DifferentialsSection";
 import GallerySection from "@/components/GallerySection";
+import ContactSection from "@/components/ContactSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
