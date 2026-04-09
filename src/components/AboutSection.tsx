@@ -1,0 +1,61 @@
+import aboutPortrait from "@/assets/about-portrait.jpg";
+
+const AboutSection = () => {
+  return (
+    <section id="sobre" className="section-padding bg-background">
+      <div className="max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="relative opacity-0 animate-fade-in-left" style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}>
+            <div className="relative">
+              <img
+                src={aboutPortrait}
+                alt="Geandra Quirino - Enfermeira Especialista"
+                className="w-full max-w-md mx-auto rounded-2xl shadow-2xl object-cover aspect-[3/4]"
+                loading="lazy"
+                width={800}
+                height={1024}
+              />
+              <div className="absolute -bottom-4 -right-4 w-full h-full border-2 border-accent rounded-2xl -z-10" />
+            </div>
+          </div>
+
+          <div className="space-y-6 opacity-0 animate-fade-in-right" style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}>
+            <div className="space-y-2">
+              <p className="font-body text-sm uppercase tracking-[0.2em] text-accent font-bold">
+                Sobre a profissional
+              </p>
+              <h2 className="section-title">
+                Geandra Quirino
+              </h2>
+              <p className="font-heading text-xl text-marsala-light italic">
+                Mestre em Enfermagem Assistencial
+              </p>
+            </div>
+
+            <div className="gold-divider !mx-0" />
+
+            <div className="space-y-4">
+              <p className="section-subtitle !max-w-none">
+                Com ampla experiência em cuidados pós-operatórios e tratamento de feridas complexas,
+                Geandra Quirino dedica sua carreira a oferecer um atendimento que une excelência técnica
+                e cuidado humanizado.
+              </p>
+              <p className="section-subtitle !max-w-none">
+                Sua abordagem personalizada garante que cada paciente receba um plano de cuidados
+                individualizado, com acompanhamento contínuo durante todo o processo de recuperação,
+                utilizando as mais modernas tecnologias disponíveis.
+              </p>
+              <p className="section-subtitle !max-w-none">
+                Mestre em Enfermagem Assistencial, atua com foco na prevenção de complicações,
+                promoção da cicatrização eficiente e na segurança do paciente em todas as fases
+                do tratamento.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default AboutSection;
