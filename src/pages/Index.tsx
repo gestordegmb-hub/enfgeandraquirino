@@ -20,6 +20,7 @@ const Index = () => {
       <TechnologiesSection />
       <DifferentialsSection />
       <GallerySection />
+      <ContactSection />
       <CTASection />
       <Footer />
       <WhatsAppFloat />
