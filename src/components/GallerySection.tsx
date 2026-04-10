@@ -30,7 +30,7 @@ const GallerySection = () => {
               <img
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-96 object-cover hover:scale-105 transition-transform duration-700"
+                className="w-full h-[28rem] object-cover hover:scale-105 transition-transform duration-700"
                 loading="lazy"
                 width={800}
                 height={600}
