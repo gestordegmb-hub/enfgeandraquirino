@@ -1,4 +1,5 @@
 import { Phone, Instagram } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
@@ -6,12 +7,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-3 gap-8 items-center text-center md:text-left">
           <div>
-            <h3 className="font-heading text-xl font-semibold text-primary-foreground mb-2">
-              Geandra Quirino
-            </h3>
-            <p className="font-body text-sm text-primary-foreground/60">
-              Mestre em Enfermagem Assistencial
-            </p>
+            <img src={logo} alt="Geandra Quirino" className="h-14 w-auto mx-auto md:mx-0 brightness-0 invert opacity-80" />
           </div>
 
           <div className="space-y-3">

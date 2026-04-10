@@ -28,10 +28,8 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
-        <a href="#" className="font-heading text-xl font-semibold">
-          <span className={scrolled ? "text-primary" : "text-primary-foreground"}>
-            Geandra Quirino
-          </span>
+        <a href="#" className="flex items-center">
+          <img src={logo} alt="Geandra Quirino" className="h-10 md:h-12 w-auto" />
         </a>
 
         <div className="hidden md:flex items-center gap-8">
