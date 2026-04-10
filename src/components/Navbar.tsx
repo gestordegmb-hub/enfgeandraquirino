@@ -38,6 +38,10 @@ const Navbar = () => {
             <a
               key={link.label}
               href={link.href}
+              onClick={(e) => {
+                e.preventDefault();
+                document.querySelector(link.href)?.scrollIntoView({ behavior: "smooth" });
+              }}
               className={`font-body text-sm tracking-wide transition-colors duration-300 hover:text-accent ${
                 scrolled ? "text-foreground" : "text-primary-foreground/90"
               }`}
@@ -63,7 +67,11 @@ const Navbar = () => {
               <a
                 key={link.label}
                 href={link.href}
-                onClick={() => setMobileOpen(false)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setMobileOpen(false);
+                  document.querySelector(link.href)?.scrollIntoView({ behavior: "smooth" });
+                }}
                 className="block font-body text-foreground hover:text-accent transition-colors"
               >
                 {link.label}
