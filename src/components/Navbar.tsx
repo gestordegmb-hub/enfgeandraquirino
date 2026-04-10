@@ -24,12 +24,12 @@ const Navbar = () => {
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${
         scrolled
           ? "bg-background/95 backdrop-blur-md shadow-sm py-3"
-          : "bg-transparent py-5"
+          : "bg-background/90 backdrop-blur-sm py-4"
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
         <a href="#" className="flex items-center">
-          <img src={logo} alt="Geandra Quirino" className="h-10 md:h-12 w-auto" />
+          <img src={logo} alt="Geandra Quirino" className="h-14 md:h-16 w-auto" />
         </a>
 
         <div className="hidden md:flex items-center gap-8">
@@ -41,9 +41,7 @@ const Navbar = () => {
                 e.preventDefault();
                 document.querySelector(link.href)?.scrollIntoView({ behavior: "smooth" });
               }}
-              className={`font-body text-sm tracking-wide transition-colors duration-300 hover:text-accent ${
-                scrolled ? "text-foreground" : "text-primary-foreground/90"
-              }`}
+              className={`font-body text-sm tracking-wide transition-colors duration-300 hover:text-accent text-foreground`}
             >
               {link.label}
             </a>
@@ -52,7 +50,7 @@ const Navbar = () => {
 
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className={`md:hidden ${scrolled ? "text-foreground" : "text-primary-foreground"}`}
+          className={`md:hidden text-foreground`}
           aria-label="Menu"
         >
           {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
