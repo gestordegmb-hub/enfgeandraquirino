@@ -23,13 +23,13 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${
         scrolled
-          ? "bg-background/95 backdrop-blur-md shadow-sm py-3"
-          : "bg-background/90 backdrop-blur-sm py-2"
+          ? "bg-background/95 backdrop-blur-md shadow-sm py-1.5"
+          : "bg-background/90 backdrop-blur-sm py-1"
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
         <a href="#" className="flex items-center">
-          <img src={logo} alt="Geandra Quirino" className="h-16 md:h-20 w-auto" />
+          <img src={logo} alt="Geandra Quirino" className="h-14 md:h-[4.75rem] w-auto shrink-0" />
         </a>
 
         <div className="hidden md:flex items-center gap-8">
