@@ -1,11 +1,13 @@
 import gallery1 from "@/assets/laserterapia.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
+import gallery4 from "@/assets/ozonioterapia.png";
 
 const images = [
   { src: gallery1, alt: "Laserterapia em tratamento de feridas" },
   { src: gallery2, alt: "Cuidados pós-operatórios especializados" },
   { src: gallery3, alt: "Atendimento domiciliar humanizado" },
+  { src: gallery4, alt: "Ozonioterapia com Dra. Geandra Quirino" },
 ];
 
 const GallerySection = () => {
