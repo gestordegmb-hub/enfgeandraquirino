@@ -14,7 +14,7 @@ const HeroSection = () => {
       <div className="relative z-10 w-full section-padding">
         <div className="max-w-7xl mx-auto flex items-center justify-center md:justify-end md:pr-[5%] lg:pr-[10%]">
           <div className="w-full md:w-1/2 lg:w-5/12 space-y-8 animate-fade-in text-center md:text-right">
-            <div className="gold-divider !ml-auto !mr-0 !w-20 !h-[2px]" />
+            <div className="gold-divider !mx-auto md:!ml-auto md:!mr-0 !w-20 !h-[2px]" />
 
             <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground leading-tight tracking-tight">
               Especialista em cuidados pós-operatórios e tratamento de feridas
