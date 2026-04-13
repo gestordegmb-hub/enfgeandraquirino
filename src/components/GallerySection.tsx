@@ -7,7 +7,7 @@ import gallery5 from "@/assets/prp-prf.png";
 const images = [
   { src: gallery1, alt: "Laserterapia em tratamento de feridas" },
   { src: gallery2, alt: "Consulta pré-operatória com Dra. Geandra Quirino" },
-  { src: gallery3, alt: "Atendimento domiciliar humanizado" },
+  { src: gallery3, alt: "Pós-operatório com Dra. Geandra Quirino" },
   { src: gallery4, alt: "Ozonioterapia com Dra. Geandra Quirino" },
   { src: gallery5, alt: "PRP/PRF com Dra. Geandra Quirino" },
 ];
