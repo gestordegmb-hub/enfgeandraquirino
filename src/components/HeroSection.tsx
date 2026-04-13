@@ -16,20 +16,20 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-to-l from-background/70 via-background/30 to-transparent" />
 
       <div className="relative z-10 w-full section-padding">
-        <div className="max-w-7xl mx-auto flex items-center justify-end">
-          <div className="w-full md:w-[45%] lg:w-[38%] space-y-6 animate-fade-in text-right">
+        <div className="max-w-7xl mx-auto flex items-center justify-center md:justify-start md:pl-[42%] lg:pl-[40%]">
+          <div className="w-full md:w-auto max-w-md space-y-6 animate-fade-in text-center">
             {/* Gold accent line */}
-            <div className="w-16 h-[2px] bg-accent ml-auto" />
+            <div className="w-16 h-[2px] bg-accent mx-auto" />
 
-            <h1 className="font-heading text-3xl md:text-4xl lg:text-[2.75rem] font-semibold text-foreground leading-[1.2] tracking-tight">
+            <h1 className="font-heading text-3xl md:text-4xl lg:text-[2.75rem] font-semibold text-foreground leading-[1.2] tracking-tight text-left">
               Especialista em cuidados pós-operatórios e tratamento de feridas
             </h1>
 
-            <p className="font-body text-base md:text-lg text-foreground/70 leading-relaxed">
+            <p className="font-body text-base md:text-lg text-foreground/70 leading-relaxed text-left">
               Atendimento humanizado e personalizado, com foco na sua recuperação segura e eficiente
             </p>
 
-            <div className="flex justify-end pt-2">
+            <div className="flex justify-center pt-2">
               <a
                 href={WHATSAPP_URL}
                 target="_blank"
