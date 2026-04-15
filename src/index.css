@@ -103,3 +103,7 @@
     -webkit-text-fill-color: transparent;
   }
 }
+
+#lovable-badge {
+display: none !important;
+}
