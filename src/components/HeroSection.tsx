@@ -21,7 +21,7 @@ const HeroSection = () => {
             {/* Gold accent line */}
             <div className="w-16 h-[2px] bg-accent mx-auto" />
 
-            <h1 className="font-heading text-3xl md:text-4xl lg:text-[2.75rem] font-semibold text-foreground leading-[1.2] tracking-tight text-left">
+            <h1 className="font-heading text-3xl md:text-4xl lg:text-[2.75rem] font-semibold text-foreground leading-[1.2] tracking-normal text-left" style={{ wordSpacing: "0.15em" }}>
               Especialista em cuidados pós-operatórios e tratamento de feridas
             </h1>
 
