@@ -32,20 +32,23 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contato" className="section-padding bg-secondary/30">
+    <section id="contato" className="section-padding bg-background">
       <div className="max-w-5xl mx-auto">
-        <div className="text-center mb-12 space-y-4">
-          <div className="gold-divider" />
-          <h2 className="font-heading text-3xl md:text-4xl font-semibold text-foreground tracking-tight">
+        <div className="text-center mb-16 space-y-4">
+          <p className="font-body text-xs uppercase tracking-[0.3em] text-accent font-bold">
+            Contato
+          </p>
+          <h2 className="section-title">
             Entre em contato
           </h2>
+          <div className="gold-divider" />
           <p className="font-body text-muted-foreground max-w-xl mx-auto leading-relaxed">
             Preencha o formulário abaixo e entraremos em contato o mais breve possível.
           </p>
         </div>
 
         <div className="max-w-xl mx-auto">
-          <form onSubmit={handleSubmit} className="space-y-5 bg-card rounded-2xl p-8 shadow-sm border border-border">
+          <form onSubmit={handleSubmit} className="space-y-5 bg-card rounded-2xl p-10 shadow-sm border border-border/50">
             <div className="space-y-2">
               <label className="font-body text-sm font-medium text-foreground flex items-center gap-2">
                 <User className="w-4 h-4 text-accent" /> Nome *
@@ -55,7 +58,7 @@ const ContactSection = () => {
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
                 maxLength={100}
-                className="bg-background"
+                className="bg-background border-border/50 focus:border-accent/50 transition-colors"
               />
             </div>
 
@@ -69,7 +72,7 @@ const ContactSection = () => {
                 value={form.email}
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
                 maxLength={255}
-                className="bg-background"
+                className="bg-background border-border/50 focus:border-accent/50 transition-colors"
               />
             </div>
 
@@ -83,7 +86,7 @@ const ContactSection = () => {
                 value={form.phone}
                 onChange={(e) => setForm({ ...form, phone: e.target.value })}
                 maxLength={20}
-                className="bg-background"
+                className="bg-background border-border/50 focus:border-accent/50 transition-colors"
               />
             </div>
 
@@ -97,14 +100,14 @@ const ContactSection = () => {
                 onChange={(e) => setForm({ ...form, message: e.target.value })}
                 maxLength={1000}
                 rows={4}
-                className="bg-background resize-none"
+                className="bg-background border-border/50 focus:border-accent/50 transition-colors resize-none"
               />
             </div>
 
             <Button
               type="submit"
               disabled={isSubmitting}
-              className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-body font-bold text-base py-6 rounded-full transition-all duration-300 hover:scale-[1.02]"
+              className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-body font-bold text-base py-6 rounded-full transition-all duration-300 hover:scale-[1.02] shadow-sm hover:shadow-md"
             >
               <Send className="w-5 h-5 mr-2" />
               {isSubmitting ? "Enviando..." : "Enviar mensagem"}
