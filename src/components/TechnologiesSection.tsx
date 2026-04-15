@@ -1,4 +1,5 @@
 import { Zap, Wind, Layers, Droplets, Sparkles } from "lucide-react";
+import ScrollReveal from "./ScrollReveal";
 
 const technologies = [
   { icon: Zap, title: "Laserterapia", description: "Estimulação celular para aceleração da cicatrização" },
@@ -12,33 +13,25 @@ const TechnologiesSection = () => {
   return (
     <section id="tecnologias" className="section-padding bg-primary">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center space-y-4 mb-20">
-          <p className="font-body text-xs uppercase tracking-[0.3em] text-accent font-bold">
-            Tecnologia
-          </p>
-          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-semibold text-primary-foreground tracking-tight">
-            Tecnologias utilizadas
-          </h2>
-          <div className="gold-divider" />
-        </div>
+        <ScrollReveal>
+          <div className="text-center space-y-4 mb-20">
+            <p className="font-body text-xs uppercase tracking-[0.3em] text-accent font-bold">Tecnologia</p>
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-semibold text-primary-foreground tracking-tight">Tecnologias utilizadas</h2>
+            <div className="gold-divider" />
+          </div>
+        </ScrollReveal>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
           {technologies.map((tech, index) => (
-            <div
-              key={tech.title}
-              className="group text-center space-y-4 p-8 rounded-2xl border border-primary-foreground/10 hover:border-accent/30 bg-primary-foreground/5 hover:bg-primary-foreground/10 transition-all duration-500 opacity-0 animate-fade-in"
-              style={{ animationDelay: `${index * 0.1}s`, animationFillMode: "forwards" }}
-            >
-              <div className="w-14 h-14 mx-auto rounded-full bg-accent/15 flex items-center justify-center group-hover:scale-110 group-hover:bg-accent/25 transition-all duration-500">
-                <tech.icon className="w-7 h-7 text-accent" />
+            <ScrollReveal key={tech.title} delay={index * 0.08}>
+              <div className="group text-center space-y-4 p-8 rounded-2xl border border-primary-foreground/10 hover:border-accent/30 bg-primary-foreground/5 hover:bg-primary-foreground/10 transition-all duration-500 h-full">
+                <div className="w-14 h-14 mx-auto rounded-full bg-accent/15 flex items-center justify-center group-hover:scale-110 group-hover:bg-accent/25 transition-all duration-500">
+                  <tech.icon className="w-7 h-7 text-accent" />
+                </div>
+                <h3 className="font-heading text-lg font-semibold text-primary-foreground">{tech.title}</h3>
+                <p className="font-body text-sm text-primary-foreground/60 leading-relaxed">{tech.description}</p>
               </div>
-              <h3 className="font-heading text-lg font-semibold text-primary-foreground">
-                {tech.title}
-              </h3>
-              <p className="font-body text-sm text-primary-foreground/60 leading-relaxed">
-                {tech.description}
-              </p>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>
