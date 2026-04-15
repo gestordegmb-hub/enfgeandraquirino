@@ -23,8 +23,8 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${
         scrolled
-          ? "bg-background/95 backdrop-blur-md shadow-sm py-1.5"
-          : "bg-background/90 backdrop-blur-sm py-1"
+          ? "bg-background/95 backdrop-blur-md shadow-sm py-1"
+          : "bg-background/80 backdrop-blur-sm py-1"
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
@@ -32,7 +32,7 @@ const Navbar = () => {
           <img src={logo} alt="Geandra Quirino" className="h-14 md:h-[4.75rem] w-auto shrink-0" />
         </a>
 
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-10">
           {navLinks.map((link) => (
             <a
               key={link.label}
@@ -41,7 +41,7 @@ const Navbar = () => {
                 e.preventDefault();
                 document.querySelector(link.href)?.scrollIntoView({ behavior: "smooth" });
               }}
-              className={`font-body text-sm tracking-wide transition-colors duration-300 hover:text-accent text-foreground`}
+              className="font-body text-xs uppercase tracking-[0.15em] transition-colors duration-300 hover:text-accent text-foreground/80"
             >
               {link.label}
             </a>
@@ -50,7 +50,7 @@ const Navbar = () => {
 
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className={`md:hidden text-foreground`}
+          className="md:hidden text-foreground"
           aria-label="Menu"
         >
           {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -58,8 +58,8 @@ const Navbar = () => {
       </div>
 
       {mobileOpen && (
-        <div className="md:hidden bg-background/98 backdrop-blur-md border-t border-border animate-fade-in">
-          <div className="px-6 py-4 space-y-4">
+        <div className="md:hidden bg-background/98 backdrop-blur-md border-t border-border/50 animate-fade-in">
+          <div className="px-6 py-6 space-y-5">
             {navLinks.map((link) => (
               <a
                 key={link.label}
@@ -69,7 +69,7 @@ const Navbar = () => {
                   setMobileOpen(false);
                   document.querySelector(link.href)?.scrollIntoView({ behavior: "smooth" });
                 }}
-                className="block font-body text-foreground hover:text-accent transition-colors"
+                className="block font-body text-sm uppercase tracking-[0.1em] text-foreground/80 hover:text-accent transition-colors"
               >
                 {link.label}
               </a>

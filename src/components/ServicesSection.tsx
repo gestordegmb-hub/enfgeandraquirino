@@ -30,30 +30,30 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section id="servicos" className="section-padding bg-secondary">
+    <section id="servicos" className="section-padding bg-secondary/50">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center space-y-4 mb-16">
-          <p className="font-body text-sm uppercase tracking-[0.2em] text-accent font-bold">
+        <div className="text-center space-y-4 mb-20">
+          <p className="font-body text-xs uppercase tracking-[0.3em] text-accent font-bold">
             Serviços
           </p>
           <h2 className="section-title">Como posso te ajudar</h2>
           <div className="gold-divider" />
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <div
               key={service.title}
-              className="group bg-background rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1 opacity-0 animate-fade-in"
+              className="group premium-card hover:-translate-y-1 opacity-0 animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s`, animationFillMode: "forwards" }}
             >
-              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors duration-300">
-                <service.icon className="w-7 h-7 text-primary" />
+              <div className="w-12 h-12 rounded-xl bg-primary/8 flex items-center justify-center mb-6 group-hover:bg-accent/15 transition-colors duration-500">
+                <service.icon className="w-6 h-6 text-primary group-hover:text-accent transition-colors duration-500" />
               </div>
-              <h3 className="font-heading text-xl font-semibold text-foreground mb-3">
+              <h3 className="font-heading text-lg font-semibold text-foreground mb-3">
                 {service.title}
               </h3>
-              <p className="font-body text-muted-foreground leading-relaxed">
+              <p className="font-body text-sm text-muted-foreground leading-relaxed">
                 {service.description}
               </p>
             </div>

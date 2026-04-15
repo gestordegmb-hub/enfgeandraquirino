@@ -4,24 +4,25 @@ const AboutSection = () => {
   return (
     <section id="sobre" className="section-padding bg-background">
       <div className="max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="grid md:grid-cols-2 gap-16 lg:gap-24 items-center">
           <div className="relative opacity-0 animate-fade-in-left" style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}>
             <div className="relative">
               <img
                 src={aboutPortrait}
                 alt="Geandra Quirino - Enfermeira Especialista"
-                className="w-full max-w-md mx-auto rounded-2xl shadow-2xl object-cover aspect-[3/4]"
+                className="w-full max-w-md mx-auto rounded-2xl shadow-[0_25px_60px_-15px_rgba(0,0,0,0.15)] object-cover aspect-[3/4]"
                 loading="lazy"
                 width={800}
                 height={1024}
               />
-              <div className="absolute -bottom-4 -right-4 w-full h-full border-2 border-accent rounded-2xl -z-10" />
+              <div className="absolute -bottom-3 -right-3 w-full h-full border border-accent/40 rounded-2xl -z-10" />
+              <div className="absolute -bottom-6 -right-6 w-full h-full border border-accent/20 rounded-2xl -z-20" />
             </div>
           </div>
 
-          <div className="space-y-6 opacity-0 animate-fade-in-right" style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}>
-            <div className="space-y-2">
-              <p className="font-body text-sm uppercase tracking-[0.2em] text-accent font-bold">
+          <div className="space-y-8 opacity-0 animate-fade-in-right" style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}>
+            <div className="space-y-3">
+              <p className="font-body text-xs uppercase tracking-[0.3em] text-accent font-bold">
                 Sobre a profissional
               </p>
               <h2 className="section-title">
@@ -32,9 +33,9 @@ const AboutSection = () => {
               </p>
             </div>
 
-            <div className="gold-divider !mx-0" />
+            <div className="gold-divider !mx-0 !w-12" />
 
-            <div className="space-y-4">
+            <div className="space-y-5">
               <p className="section-subtitle !max-w-none">
                 Com ampla experiência em cuidados pós-operatórios e tratamento de feridas complexas,
                 Geandra Quirino dedica sua carreira a oferecer um atendimento que une excelência técnica

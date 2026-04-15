@@ -14,27 +14,27 @@ const images = [
 
 const GallerySection = () => {
   return (
-    <section className="section-padding bg-secondary">
+    <section className="section-padding bg-secondary/50">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center space-y-4 mb-16">
-          <p className="font-body text-sm uppercase tracking-[0.2em] text-accent font-bold">
+        <div className="text-center space-y-4 mb-20">
+          <p className="font-body text-xs uppercase tracking-[0.3em] text-accent font-bold">
             Galeria
           </p>
           <h2 className="section-title">Atendimentos</h2>
           <div className="gold-divider" />
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {images.map((image, index) => (
             <div
               key={index}
-              className="overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-500 opacity-0 animate-fade-in"
+              className="group overflow-hidden rounded-2xl shadow-sm hover:shadow-xl border border-border/30 hover:border-accent/20 transition-all duration-500 opacity-0 animate-fade-in"
               style={{ animationDelay: `${index * 0.15}s`, animationFillMode: "forwards" }}
             >
               <img
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-[28rem] object-cover hover:scale-105 transition-transform duration-700"
+                className="w-full h-[28rem] object-cover group-hover:scale-105 transition-transform duration-700"
                 loading="lazy"
                 width={800}
                 height={600}
