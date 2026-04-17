@@ -23,7 +23,7 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${
         scrolled
-          ? "bg-background/95 backdrop-blur-md shadow-sm py-1"
+          ? "bg-background/95 backdrop-blur-md shadow-sm py-1 border-b border-rose-gold/20"
           : "bg-background/80 backdrop-blur-sm py-1"
       }`}
     >
