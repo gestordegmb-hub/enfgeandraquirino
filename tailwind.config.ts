@@ -55,6 +55,18 @@ export default {
           DEFAULT: "hsl(var(--marsala))",
           light: "hsl(var(--marsala-light))",
         },
+        bordo: {
+          DEFAULT: "hsl(var(--bordo))",
+          deep: "hsl(var(--bordo-deep))",
+          light: "hsl(var(--bordo-light))",
+        },
+        rose: {
+          DEFAULT: "hsl(var(--rose))",
+          light: "hsl(var(--rose-light))",
+          soft: "hsl(var(--rose-soft))",
+          gold: "hsl(var(--rose-gold))",
+        },
+        champagne: "hsl(var(--champagne))",
         gold: {
           DEFAULT: "hsl(var(--gold))",
           light: "hsl(var(--gold-light))",
