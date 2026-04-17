@@ -6,7 +6,7 @@ import gallery5 from "@/assets/prp-prf.png";
 import ScrollReveal from "./ScrollReveal";
 
 const images = [
-  { src: gallery1, alt: "Laserterapia em tratamento de feridas" },
+  { src: gallery1, alt: "Laserterapia em tratamento avançado de feridas" },
   { src: gallery2, alt: "Consulta pré-operatória com Dra. Geandra Quirino" },
   { src: gallery3, alt: "Pós-operatório com Dra. Geandra Quirino" },
   { src: gallery4, alt: "Ozonioterapia com Dra. Geandra Quirino" },
