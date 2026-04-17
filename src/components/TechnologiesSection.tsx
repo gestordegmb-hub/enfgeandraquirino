@@ -5,7 +5,7 @@ const technologies = [
   { icon: Zap, title: "Laserterapia", description: "Estimulação celular para aceleração da cicatrização" },
   { icon: Wind, title: "Ozonioterapia", description: "Terapia com ozônio para ação antimicrobiana e regenerativa" },
   { icon: Layers, title: "Coberturas tecnológicas", description: "Curativos avançados de última geração" },
-  { icon: Droplets, title: "PRP / PRF", description: "Plasma rico em plaquetas para regeneração tecidual" },
+  { icon: Droplets, title: "PRP / PRF", description: "Fibrina Rica em Plaquetas e outras terapias regenerativas" },
   { icon: Sparkles, title: "Terapias avançadas", description: "Protocolos inovadores baseados em evidências científicas" },
 ];
 
