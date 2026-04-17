@@ -25,7 +25,7 @@ const HeroSection = () => {
             <h1 className="font-heading text-3xl md:text-4xl lg:text-[2.75rem] font-semibold leading-[1.2] tracking-normal text-left" style={{ wordSpacing: "0.15em" }}>
               <span className="text-foreground">Especialista em </span>
               <span className="text-gradient-bordo">cuidados pós-operatórios</span>
-              <span className="text-foreground"> e tratamento de feridas</span>
+              <span className="text-foreground"> e tratamento avançado de feridas</span>
             </h1>
 
             <p className="font-body text-base md:text-lg text-foreground/70 leading-relaxed text-left">

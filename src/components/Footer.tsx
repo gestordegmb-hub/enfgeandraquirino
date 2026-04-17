@@ -32,7 +32,7 @@ const Footer = () => {
 
           <div className="md:text-right">
             <p className="font-body text-sm text-primary-foreground/40 leading-relaxed">
-              Cuidado especializado em tratamento de feridas e acompanhamento pós-operatório com excelência e humanização.
+              Cuidado especializado em tratamento avançado de feridas e acompanhamento pós-operatório com excelência e humanização.
             </p>
           </div>
         </div>

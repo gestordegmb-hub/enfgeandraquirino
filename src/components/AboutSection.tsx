@@ -37,7 +37,7 @@ const AboutSection = () => {
 
               <div className="space-y-5">
                 <p className="section-subtitle !max-w-none">
-                  Com ampla experiência em cuidados pós-operatórios e tratamento de feridas complexas,
+                  Com ampla experiência em cuidados pós-operatórios e tratamento avançado de feridas complexas,
                   Geandra Quirino dedica sua carreira a oferecer um atendimento que une excelência técnica
                   e cuidado humanizado.
                 </p>
