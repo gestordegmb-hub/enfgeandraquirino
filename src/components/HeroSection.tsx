@@ -12,17 +12,20 @@ const HeroSection = () => {
         style={{ backgroundImage: `url(${heroBg})` }}
       />
 
-      {/* Subtle gradient overlay for text readability on right side */}
-      <div className="absolute inset-0 bg-gradient-to-l from-background/70 via-background/30 to-transparent" />
+      {/* Premium gradient overlay rosê */}
+      <div className="absolute inset-0 bg-gradient-to-l from-background/80 via-background/40 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-radial-rose opacity-60" />
 
       <div className="relative z-10 w-full section-padding">
         <div className="max-w-7xl mx-auto flex items-center justify-center md:justify-start md:pl-[42%] lg:pl-[40%]">
           <div className="w-full md:w-auto max-w-md space-y-6 animate-fade-in text-center">
-            {/* Gold accent line */}
-            <div className="w-16 h-[2px] bg-accent mx-auto" />
+            {/* Premium divider */}
+            <div className="gold-divider-premium" />
 
-            <h1 className="font-heading text-3xl md:text-4xl lg:text-[2.75rem] font-semibold text-foreground leading-[1.2] tracking-normal text-left" style={{ wordSpacing: "0.15em" }}>
-              Especialista em cuidados pós-operatórios e tratamento de feridas
+            <h1 className="font-heading text-3xl md:text-4xl lg:text-[2.75rem] font-semibold leading-[1.2] tracking-normal text-left" style={{ wordSpacing: "0.15em" }}>
+              <span className="text-foreground">Especialista em </span>
+              <span className="text-gradient-bordo">cuidados pós-operatórios</span>
+              <span className="text-foreground"> e tratamento de feridas</span>
             </h1>
 
             <p className="font-body text-base md:text-lg text-foreground/70 leading-relaxed text-left">
@@ -34,7 +37,7 @@ const HeroSection = () => {
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 bg-accent hover:bg-accent/90 text-accent-foreground font-body font-semibold text-base px-8 py-3.5 rounded-full transition-all duration-300 hover:scale-105 shadow-md"
+                className="inline-flex items-center gap-3 bg-gradient-premium hover:opacity-95 text-primary-foreground font-body font-semibold text-base px-8 py-3.5 rounded-full transition-all duration-300 hover:scale-105 shadow-premium"
               >
                 <MessageCircle className="w-5 h-5" />
                 Agendar consulta

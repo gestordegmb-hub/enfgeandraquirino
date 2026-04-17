@@ -3,7 +3,8 @@ import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-foreground section-padding !py-16">
+    <footer className="bg-gradient-premium section-padding !py-16 relative overflow-hidden">
+      <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-rose-gold/60 to-transparent" />
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-3 gap-10 items-center text-center md:text-left">
           <div>
