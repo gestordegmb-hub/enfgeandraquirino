@@ -6,43 +6,58 @@
 
 @layer base {
   :root {
-    --background: 30 25% 97%;
-    --foreground: 348 30% 15%;
+    /* Rosê & Bordô premium palette */
+    --background: 350 40% 98%;
+    --foreground: 345 50% 12%;
 
-    --card: 30 20% 95%;
-    --card-foreground: 348 30% 15%;
+    --card: 350 35% 96%;
+    --card-foreground: 345 50% 12%;
 
-    --popover: 30 25% 97%;
-    --popover-foreground: 348 30% 15%;
+    --popover: 350 40% 98%;
+    --popover-foreground: 345 50% 12%;
 
-    --primary: 348 40% 30%;
-    --primary-foreground: 30 25% 97%;
+    /* Bordô profundo */
+    --primary: 345 55% 22%;
+    --primary-foreground: 350 40% 98%;
 
-    --secondary: 30 20% 92%;
-    --secondary-foreground: 348 30% 15%;
+    /* Rosê suave */
+    --secondary: 350 45% 92%;
+    --secondary-foreground: 345 55% 22%;
 
-    --muted: 30 15% 90%;
-    --muted-foreground: 348 10% 45%;
+    --muted: 350 25% 93%;
+    --muted-foreground: 345 15% 40%;
 
-    --accent: 38 45% 65%;
-    --accent-foreground: 348 30% 15%;
+    /* Rosê dourado / champagne rose */
+    --accent: 350 55% 70%;
+    --accent-foreground: 345 55% 18%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 350 40% 98%;
 
-    --border: 30 15% 88%;
-    --input: 30 15% 88%;
-    --ring: 348 40% 30%;
+    --border: 350 30% 88%;
+    --input: 350 30% 88%;
+    --ring: 345 55% 22%;
 
     --radius: 0.5rem;
 
-    --marsala: 348 40% 30%;
-    --marsala-light: 348 30% 40%;
-    --gold: 38 45% 65%;
-    --gold-light: 38 40% 80%;
-    --beige: 30 25% 97%;
-    --beige-dark: 30 20% 90%;
-    --cream: 35 30% 95%;
+    /* Brand tokens */
+    --bordo: 345 60% 20%;
+    --bordo-deep: 345 70% 14%;
+    --bordo-light: 345 45% 35%;
+    --rose: 350 60% 75%;
+    --rose-light: 350 65% 88%;
+    --rose-soft: 350 50% 95%;
+    --rose-gold: 15 50% 70%;
+    --champagne: 30 40% 85%;
+
+    /* Manter compat com tokens antigos (mapeados para nova paleta) */
+    --marsala: 345 55% 22%;
+    --marsala-light: 345 45% 35%;
+    --gold: 350 55% 70%;
+    --gold-light: 350 65% 88%;
+    --beige: 350 40% 98%;
+    --beige-dark: 350 30% 92%;
+    --cream: 350 50% 95%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -88,19 +103,55 @@
   }
 
   .gold-divider {
-    @apply w-16 h-[1px] bg-accent mx-auto;
+    @apply w-16 h-[1px] mx-auto;
+    background: linear-gradient(90deg, transparent, hsl(var(--rose-gold)), transparent);
   }
 
   .premium-card {
-    @apply bg-background rounded-2xl p-8 border border-border/50 shadow-sm hover:shadow-lg hover:border-accent/20 transition-all duration-500;
+    @apply bg-card rounded-2xl p-8 border border-accent/20 shadow-sm hover:shadow-premium hover:border-accent/40 transition-all duration-500;
   }
 }
 
 @layer utilities {
   .text-gradient-gold {
-    background: linear-gradient(135deg, hsl(var(--gold)), hsl(var(--gold-light)));
+    background: linear-gradient(135deg, hsl(var(--rose-gold)), hsl(var(--rose-light)));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  .text-gradient-bordo {
+    background: linear-gradient(135deg, hsl(var(--bordo)) 0%, hsl(var(--bordo-light)) 50%, hsl(var(--rose-gold)) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .bg-gradient-premium {
+    background: linear-gradient(135deg, hsl(var(--bordo-deep)) 0%, hsl(var(--bordo)) 50%, hsl(var(--bordo-light)) 100%);
+  }
+
+  .bg-gradient-rose {
+    background: linear-gradient(135deg, hsl(var(--rose-soft)) 0%, hsl(var(--rose-light)) 100%);
+  }
+
+  .bg-gradient-radial-rose {
+    background: radial-gradient(ellipse at top, hsl(var(--rose-light) / 0.4), transparent 70%);
+  }
+
+  .shadow-premium {
+    box-shadow: 0 20px 60px -20px hsl(var(--bordo) / 0.35), 0 10px 30px -10px hsl(var(--rose-gold) / 0.2);
+  }
+
+  .shadow-rose-glow {
+    box-shadow: 0 0 40px hsl(var(--rose) / 0.25), 0 10px 30px -10px hsl(var(--bordo) / 0.2);
+  }
+
+  .border-gradient-gold {
+    border-image: linear-gradient(135deg, hsl(var(--rose-gold)), hsl(var(--rose-light))) 1;
+  }
+
+  .gold-divider-premium {
+    @apply w-24 h-[2px] mx-auto;
+    background: linear-gradient(90deg, transparent, hsl(var(--rose-gold)), hsl(var(--bordo)), hsl(var(--rose-gold)), transparent);
   }
 }
 
