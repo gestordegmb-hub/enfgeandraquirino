@@ -12,34 +12,38 @@ const HeroSection = () => {
         style={{ backgroundImage: `url(${heroBg})` }}
       />
 
-      {/* Premium gradient overlay rosê */}
-      <div className="absolute inset-0 bg-gradient-to-l from-background/80 via-background/40 to-transparent" />
-      <div className="absolute inset-0 bg-gradient-radial-rose opacity-60" />
+      {/* Premium gradient overlay rosê — better text contrast */}
+      <div className="absolute inset-0 bg-gradient-to-l from-background/90 via-background/55 to-background/10" />
+      <div className="absolute inset-0 bg-gradient-radial-rose opacity-70" />
 
       <div className="relative z-10 w-full section-padding">
         <div className="max-w-7xl mx-auto flex items-center justify-center md:justify-start md:pl-[42%] lg:pl-[40%]">
-          <div className="w-full md:w-auto max-w-md space-y-6 animate-fade-in text-center">
+          <div className="w-full md:w-auto max-w-lg space-y-7 animate-fade-in text-center">
             {/* Premium divider */}
             <div className="gold-divider-premium" />
 
-            <h1 className="font-heading text-3xl md:text-4xl lg:text-[2.75rem] font-semibold leading-[1.2] tracking-normal text-left" style={{ wordSpacing: "0.15em" }}>
-              <span className="text-foreground">Especialista em </span>
-              <span className="text-gradient-bordo">cuidados pós-operatórios</span>
-              <span className="text-foreground"> e tratamento avançado de feridas</span>
+            <h1 className="font-heading text-3xl md:text-4xl lg:text-[2.75rem] font-semibold leading-[1.18] tracking-normal text-left" style={{ wordSpacing: "0.12em" }}>
+              <span className="text-foreground">Especialista em acelerar sua </span>
+              <span className="text-gradient-bordo">recuperação pós-operatória</span>
+              <span className="text-foreground"> com segurança</span>
             </h1>
 
-            <p className="font-body text-base md:text-lg text-foreground/70 leading-relaxed text-left">
-              Atendimento humanizado e personalizado, com foco na sua recuperação segura e eficiente
+            <p className="inline-block font-body text-sm md:text-base font-bold uppercase tracking-[0.2em] text-accent-foreground bg-accent/90 px-5 py-2 rounded-full shadow-rose-glow">
+              Tratamento avançado de feridas
             </p>
 
-            <div className="flex justify-center pt-2">
+            <p className="font-body text-base md:text-lg text-foreground/80 leading-relaxed text-justify-pretty">
+              Atendimento humanizado e personalizado, com foco na sua recuperação segura, eficiente e com acompanhamento especializado.
+            </p>
+
+            <div className="flex justify-center pt-3">
               <a
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 bg-gradient-premium hover:opacity-95 text-primary-foreground font-body font-semibold text-base px-8 py-3.5 rounded-full transition-all duration-300 hover:scale-105 shadow-premium"
+                className="cta-pulse inline-flex items-center gap-3 bg-gradient-premium hover:opacity-95 text-primary-foreground font-body font-bold text-base md:text-lg px-10 py-4 rounded-full transition-all duration-300 hover:scale-105 shadow-premium ring-1 ring-rose-gold/40"
               >
-                <MessageCircle className="w-5 h-5" />
+                <MessageCircle className="w-5 h-5 md:w-6 md:h-6" />
                 Agendar consulta
               </a>
             </div>

@@ -25,18 +25,19 @@ const GallerySection = () => {
           </div>
         </ScrollReveal>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
           {images.map((image, index) => (
             <ScrollReveal key={index} delay={index * 0.1}>
-              <div className="group overflow-hidden rounded-2xl shadow-sm hover:shadow-xl border border-border/30 hover:border-accent/20 transition-all duration-500">
+              <div className="group relative overflow-hidden rounded-3xl shadow-sm hover:shadow-premium border border-rose-gold/20 hover:border-rose-gold/50 transition-all duration-700">
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className="w-full h-[28rem] object-cover group-hover:scale-105 transition-transform duration-700"
+                  className="w-full h-[28rem] object-cover group-hover:scale-110 transition-transform duration-[1200ms] ease-out"
                   loading="lazy"
                   width={800}
                   height={600}
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-bordo-deep/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
               </div>
             </ScrollReveal>
           ))}
