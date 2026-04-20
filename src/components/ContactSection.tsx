@@ -44,32 +44,33 @@ const ContactSection = () => {
 
         <ScrollReveal delay={0.1}>
           <div className="max-w-xl mx-auto">
-            <form onSubmit={handleSubmit} className="space-y-5 bg-card rounded-2xl p-10 shadow-sm border border-border/50">
+            <form onSubmit={handleSubmit} className="space-y-6 bg-card rounded-3xl p-10 md:p-12 shadow-premium border border-rose-gold/20 relative overflow-hidden">
+              <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-rose-gold to-transparent" />
               <div className="space-y-2">
                 <label className="font-body text-sm font-medium text-foreground flex items-center gap-2">
                   <User className="w-4 h-4 text-accent" /> Nome *
                 </label>
-                <Input placeholder="Seu nome completo" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} maxLength={100} className="bg-background border-border/50 focus:border-accent/50 transition-colors" />
+                <Input placeholder="Seu nome completo" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} maxLength={100} className="bg-background border-rose-gold/30 focus:border-accent h-12 rounded-xl transition-colors" />
               </div>
               <div className="space-y-2">
                 <label className="font-body text-sm font-medium text-foreground flex items-center gap-2">
                   <Mail className="w-4 h-4 text-accent" /> E-mail *
                 </label>
-                <Input type="email" placeholder="seu@email.com" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} maxLength={255} className="bg-background border-border/50 focus:border-accent/50 transition-colors" />
+                <Input type="email" placeholder="seu@email.com" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} maxLength={255} className="bg-background border-rose-gold/30 focus:border-accent h-12 rounded-xl transition-colors" />
               </div>
               <div className="space-y-2">
                 <label className="font-body text-sm font-medium text-foreground flex items-center gap-2">
                   <MessageSquare className="w-4 h-4 text-accent" /> Telefone
                 </label>
-                <Input type="tel" placeholder="(22) 99999-9999" value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} maxLength={20} className="bg-background border-border/50 focus:border-accent/50 transition-colors" />
+                <Input type="tel" placeholder="(22) 99999-9999" value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} maxLength={20} className="bg-background border-rose-gold/30 focus:border-accent h-12 rounded-xl transition-colors" />
               </div>
               <div className="space-y-2">
                 <label className="font-body text-sm font-medium text-foreground flex items-center gap-2">
                   <MessageSquare className="w-4 h-4 text-accent" /> Mensagem *
                 </label>
-                <Textarea placeholder="Como posso te ajudar?" value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} maxLength={1000} rows={4} className="bg-background border-border/50 focus:border-accent/50 transition-colors resize-none" />
+                <Textarea placeholder="Como posso te ajudar?" value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} maxLength={1000} rows={5} className="bg-background border-rose-gold/30 focus:border-accent rounded-xl transition-colors resize-none" />
               </div>
-              <Button type="submit" disabled={isSubmitting} className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-body font-bold text-base py-6 rounded-full transition-all duration-300 hover:scale-[1.02] shadow-sm hover:shadow-md">
+              <Button type="submit" disabled={isSubmitting} className="w-full bg-gradient-premium hover:opacity-95 text-primary-foreground font-body font-bold text-base py-7 rounded-full transition-all duration-300 hover:scale-[1.02] shadow-premium ring-1 ring-rose-gold/40">
                 <Send className="w-5 h-5 mr-2" />
                 {isSubmitting ? "Enviando..." : "Enviar mensagem"}
               </Button>

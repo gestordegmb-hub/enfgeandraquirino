@@ -14,22 +14,22 @@ const CTASection = () => {
         <div className="max-w-3xl mx-auto space-y-10 relative z-10">
           <div className="gold-divider-premium" />
 
-          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-semibold text-primary-foreground tracking-tight">
-            Agende seu atendimento
+          <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-semibold text-primary-foreground tracking-tight leading-tight">
+            Agende seu atendimento <span className="text-rose-light italic">especializado</span>
           </h2>
 
-          <p className="font-body text-lg text-primary-foreground/80 max-w-xl mx-auto leading-relaxed">
-            Entre em contato pelo WhatsApp e receba um atendimento personalizado para suas necessidades.
+          <p className="font-body text-lg md:text-xl text-primary-foreground/85 max-w-2xl mx-auto leading-relaxed">
+            Receba um acompanhamento profissional, humanizado e focado na sua recuperação completa.
           </p>
 
           <a
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-accent hover:bg-accent/90 text-accent-foreground font-body font-bold text-lg px-14 py-5 rounded-full transition-all duration-300 hover:scale-105 shadow-rose-glow"
+            className="cta-pulse inline-flex items-center gap-4 bg-accent hover:bg-rose-light text-accent-foreground font-body font-bold text-lg md:text-xl px-16 py-6 rounded-full transition-all duration-300 hover:scale-105 shadow-rose-glow ring-2 ring-rose-gold/40"
           >
-            <MessageCircle className="w-6 h-6" />
-            Fale comigo no WhatsApp
+            <MessageCircle className="w-7 h-7" />
+            Falar no WhatsApp
           </a>
         </div>
       </ScrollReveal>

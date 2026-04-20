@@ -27,29 +27,24 @@ const AboutSection = () => {
                 <p className="font-body text-xs uppercase tracking-[0.3em] text-accent font-bold">
                   Sobre a profissional
                 </p>
-                <h2 className="section-title">Geandra Quirino</h2>
-                <p className="font-heading text-xl text-marsala-light italic">
+                <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-semibold text-gradient-bordo tracking-tight">
+                  Geandra Quirino
+                </h2>
+                <p className="font-heading text-xl md:text-2xl text-bordo-light italic">
                   Mestre em Enfermagem Assistencial
                 </p>
               </div>
 
               <div className="gold-divider !mx-0 !w-12" />
 
-              <div className="space-y-5">
-                <p className="section-subtitle !max-w-none">
+              <div className="space-y-6">
+                <p className="section-subtitle !max-w-none text-justify-pretty">
                   Com ampla experiência em cuidados pós-operatórios e tratamento avançado de feridas de difícil cicatrização,
-                  Geandra Quirino dedica sua carreira a oferecer um atendimento que une excelência técnica
-                  e cuidado humanizado.
+                  Geandra Quirino oferece um atendimento que une técnica, ciência e cuidado humanizado.
                 </p>
-                <p className="section-subtitle !max-w-none">
-                  Sua abordagem personalizada garante que cada paciente receba um plano de cuidados
-                  individualizado, com acompanhamento contínuo durante todo o processo de recuperação,
-                  utilizando as mais modernas tecnologias disponíveis.
-                </p>
-                <p className="section-subtitle !max-w-none">
-                  Mestre em Enfermagem Assistencial, atua com foco na prevenção de complicações,
-                  promoção da cicatrização eficiente e na segurança do paciente em todas as fases
-                  do tratamento.
+                <p className="section-subtitle !max-w-none text-justify-pretty">
+                  Sua abordagem é totalmente personalizada, garantindo acompanhamento contínuo e seguro
+                  em todas as fases da recuperação, com utilização das mais modernas tecnologias disponíveis.
                 </p>
               </div>
             </div>

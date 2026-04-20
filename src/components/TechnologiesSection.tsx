@@ -11,25 +11,28 @@ const technologies = [
 
 const TechnologiesSection = () => {
   return (
-    <section id="tecnologias" className="section-padding bg-primary">
-      <div className="max-w-6xl mx-auto">
+    <section id="tecnologias" className="section-padding bg-gradient-premium relative overflow-hidden">
+      {/* Subtle decorative glows to soften the bordô background */}
+      <div className="absolute -top-40 -left-40 w-[500px] h-[500px] rounded-full bg-rose/10 blur-3xl pointer-events-none" />
+      <div className="absolute -bottom-40 -right-40 w-[500px] h-[500px] rounded-full bg-rose-gold/10 blur-3xl pointer-events-none" />
+      <div className="max-w-7xl mx-auto relative z-10">
         <ScrollReveal>
-          <div className="text-center space-y-4 mb-20">
+          <div className="text-center space-y-4 mb-24">
             <p className="font-body text-xs uppercase tracking-[0.3em] text-accent font-bold">Tecnologia</p>
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-semibold text-primary-foreground tracking-tight">Tecnologias utilizadas</h2>
-            <div className="gold-divider" />
+            <div className="gold-divider-premium" />
           </div>
         </ScrollReveal>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-8">
           {technologies.map((tech, index) => (
             <ScrollReveal key={tech.title} delay={index * 0.08}>
-              <div className="group text-center space-y-4 p-8 rounded-2xl border border-primary-foreground/10 hover:border-accent/30 bg-primary-foreground/5 hover:bg-primary-foreground/10 transition-all duration-500 h-full">
-                <div className="w-14 h-14 mx-auto rounded-full bg-accent/15 flex items-center justify-center group-hover:scale-110 group-hover:bg-accent/25 transition-all duration-500">
-                  <tech.icon className="w-7 h-7 text-accent" />
+              <div className="group text-center space-y-5 p-8 rounded-2xl border border-primary-foreground/15 hover:border-rose-gold/50 bg-primary-foreground/8 hover:bg-primary-foreground/12 backdrop-blur-sm transition-all duration-500 h-full hover:-translate-y-1">
+                <div className="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br from-rose-gold/25 to-rose/20 flex items-center justify-center group-hover:scale-110 group-hover:from-rose-gold/40 transition-all duration-500 ring-1 ring-rose-gold/30">
+                  <tech.icon className="w-8 h-8 text-rose-light" />
                 </div>
-                <h3 className="font-heading text-lg font-semibold text-primary-foreground">{tech.title}</h3>
-                <p className="font-body text-sm text-primary-foreground/60 leading-relaxed">{tech.description}</p>
+                <h3 className="font-heading text-lg md:text-xl font-semibold text-primary-foreground">{tech.title}</h3>
+                <p className="font-body text-sm text-primary-foreground/80 leading-relaxed">{tech.description}</p>
               </div>
             </ScrollReveal>
           ))}

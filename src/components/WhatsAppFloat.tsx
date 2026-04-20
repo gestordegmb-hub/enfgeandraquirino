@@ -9,9 +9,13 @@ const WhatsAppFloat = () => {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Contato via WhatsApp"
-      className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] hover:bg-[#20BD5A] rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 animate-float"
+      className="group fixed bottom-6 right-6 z-50 flex items-center gap-3 bg-[#25D366] hover:bg-[#20BD5A] rounded-full pl-4 pr-5 py-3 md:pl-5 md:pr-6 md:py-4 shadow-2xl hover:shadow-[0_15px_50px_-10px_rgba(37,211,102,0.7)] transition-all duration-300 hover:scale-105 animate-float ring-4 ring-white/30"
     >
-      <MessageCircle className="w-7 h-7 text-background" />
+      <span className="absolute inset-0 rounded-full bg-[#25D366] opacity-60 animate-ping pointer-events-none" />
+      <MessageCircle className="relative w-6 h-6 md:w-7 md:h-7 text-white" />
+      <span className="relative font-body font-bold text-sm md:text-base text-white hidden sm:inline">
+        Fale comigo
+      </span>
     </a>
   );
 };
