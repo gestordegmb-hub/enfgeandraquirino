@@ -2,8 +2,8 @@ import { Zap, Wind, Layers, Droplets, Sparkles, Activity } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 
 const technologies = [
-  { icon: Zap, title: "Laserterapia", description: "Estimulação celular para aceleração da cicatrização" },
-  { icon: Wind, title: "Ozonioterapia", description: "Terapia com ozônio para ação antimicrobiana e regenerativa" },
+  { icon: Zap, title: "Laserterapia", description: "Estimulação celular para aceleração da cicatrização, redução da dor e inflamação" },
+  { icon: Wind, title: "Ozonioterapia", description: "Terapia com ozônio para ação antimicrobiana e regenerativa, efeito anti-inflamatório e de oxigenação dos tecidos" },
   { icon: Layers, title: "Coberturas tecnológicas", description: "Curativos avançados de última geração" },
   { icon: Droplets, title: "PRP / PRF", description: "Fibrina Rica em Plaquetas e outras terapias regenerativas" },
   { icon: Activity, title: "Terapia por Pressão Negativa (VAC / TPN)", description: "Tecnologia avançada no tratamento de feridas profundas e de difícil cicatrização, utilizando pressão negativa contínua que acelera significativamente o processo de recuperação." },
