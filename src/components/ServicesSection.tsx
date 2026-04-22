@@ -1,4 +1,4 @@
-import { Stethoscope, HeartPulse, ShieldCheck, Home, GraduationCap, Users, Activity } from "lucide-react";
+import { Stethoscope, HeartPulse, ShieldCheck, Home, GraduationCap, Users } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 
 const services = [
@@ -8,7 +8,6 @@ const services = [
   { icon: Home, title: "Atendimento domiciliar", description: "Comodidade e cuidado no conforto da sua casa, com todo o suporte técnico e humanizado que você merece. Levo até você toda tecnologia de um consultório ou clínica." },
   { icon: GraduationCap, title: "Mentorias e consultorias", description: "Capacitação e orientação para profissionais da saúde que desejam aprimorar seus conhecimentos em feridas." },
   { icon: Users, title: "Acompanhamento pós-operatório hospitalar e domiciliar", description: "Equipe de enfermagem treinada para os cuidados no momento mais delicado do pós-cirúrgico, das primeiras semanas até a retirada dos pontos. Também realizo treinamento de equipes para cuidados pós-operatórios seguros." },
-  { icon: Activity, title: "Terapia por Pressão Negativa (VAC / TPN)", description: "Tecnologia avançada no tratamento de feridas profundas e de difícil cicatrização, utilizando pressão negativa contínua que acelera significativamente o processo de recuperação." },
 ];
 
 const ServicesSection = () => {
