@@ -4,7 +4,7 @@ import ScrollReveal from "./ScrollReveal";
 const services = [
   { icon: Stethoscope, title: "Pré-operatório", description: "Preparação completa para sua cirurgia, com orientações personalizadas e avaliação criteriosa para garantir segurança." },
   { icon: HeartPulse, title: "Pós-operatório", description: "Acompanhamento especializado durante toda a recuperação, prevenindo complicações e promovendo cicatrização eficiente." },
-  { icon: ShieldCheck, title: "Feridas de difícil cicatrização", description: "Tratamento avançado com tecnologias de ponta para feridas de difícil cicatrização, crônicas e de difícil resolução." },
+  { icon: ShieldCheck, title: "Feridas de difícil cicatrização", description: "Tratamento avançado com tecnologias de ponta para feridas de difícil cicatrização e/ou de difícil resolução." },
   { icon: Home, title: "Atendimento domiciliar", description: "Comodidade e cuidado no conforto da sua casa, com todo o suporte técnico e humanizado que você merece. Levo até você toda tecnologia de um consultório ou clínica." },
   { icon: GraduationCap, title: "Mentorias e consultorias", description: "Capacitação e orientação para profissionais da saúde que desejam aprimorar seus conhecimentos em feridas." },
   { icon: Users, title: "Acompanhamento pós-operatório hospitalar e domiciliar", description: "Equipe de enfermagem treinada para os cuidados no momento mais delicado do pós-cirúrgico, das primeiras semanas até a retirada dos pontos. Também realizo treinamento de equipes para cuidados pós-operatórios seguros." },
