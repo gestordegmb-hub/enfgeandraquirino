@@ -1,8 +1,8 @@
 import gallery1 from "@/assets/laserterapia.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
-import gallery4 from "@/assets/ozonioterapia.png";
-import gallery5 from "@/assets/prp-prf.png";
+import gallery4 from "@/assets/ozonioterapia.jpg";
+import gallery5 from "@/assets/prp-prf.jpg";
 import ScrollReveal from "./ScrollReveal";
 
 const images = [
