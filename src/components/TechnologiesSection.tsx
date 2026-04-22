@@ -1,4 +1,4 @@
-import { Zap, Wind, Layers, Droplets, Sparkles } from "lucide-react";
+import { Zap, Wind, Layers, Droplets, Sparkles, Activity } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 
 const technologies = [
@@ -6,6 +6,7 @@ const technologies = [
   { icon: Wind, title: "Ozonioterapia", description: "Terapia com ozônio para ação antimicrobiana e regenerativa" },
   { icon: Layers, title: "Coberturas tecnológicas", description: "Curativos avançados de última geração" },
   { icon: Droplets, title: "PRP / PRF", description: "Fibrina Rica em Plaquetas e outras terapias regenerativas" },
+  { icon: Activity, title: "Terapia por Pressão Negativa (VAC / TPN)", description: "Tecnologia avançada no tratamento de feridas profundas e de difícil cicatrização, utilizando pressão negativa contínua que acelera significativamente o processo de recuperação." },
   { icon: Sparkles, title: "Terapias avançadas", description: "Protocolos inovadores baseados em evidências científicas" },
 ];
 
@@ -24,7 +25,7 @@ const TechnologiesSection = () => {
           </div>
         </ScrollReveal>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {technologies.map((tech, index) => (
             <ScrollReveal key={tech.title} delay={index * 0.08}>
               <div className="group text-center space-y-5 p-8 rounded-2xl border border-primary-foreground/15 hover:border-rose-gold/50 bg-primary-foreground/8 hover:bg-primary-foreground/12 backdrop-blur-sm transition-all duration-500 h-full hover:-translate-y-1">
