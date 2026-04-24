@@ -9,6 +9,7 @@ import ContactSection from "@/components/ContactSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
+import CreditBar from "@/components/CreditBar";
 
 const Index = () => {
   return (
@@ -23,6 +24,7 @@ const Index = () => {
       <ContactSection />
       <CTASection />
       <Footer />
+      <CreditBar />
       <WhatsAppFloat />
     </div>
   );
