@@ -7,7 +7,7 @@ const CreditBar = () => {
           href="https://wa.me/5522997455396"
           target="_blank"
           rel="noopener noreferrer"
-          className="font-bold text-[#C4A35A] hover:text-[#E0BE74] hover:tracking-wider transition-all duration-300 hover:underline underline-offset-4 decoration-[#C4A35A]/60"
+          className="font-bold text-rose hover:text-rose-light hover:tracking-wider transition-all duration-300 hover:underline underline-offset-4 decoration-rose/60"
         >
           PL DIGITAL
         </a>
