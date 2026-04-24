@@ -32,7 +32,7 @@ const ContactSection = () => {
     <section id="contato" className="section-padding bg-background">
       <div className="max-w-5xl mx-auto">
         <ScrollReveal>
-          <div className="text-center mb-16 space-y-4">
+          <div className="text-center mb-12 md:mb-16 space-y-4">
             <p className="font-body text-xs uppercase tracking-[0.3em] text-accent font-bold">Contato</p>
             <h2 className="section-title">Entre em contato</h2>
             <div className="gold-divider" />
@@ -44,7 +44,7 @@ const ContactSection = () => {
 
         <ScrollReveal delay={0.1}>
           <div className="max-w-xl mx-auto">
-            <form onSubmit={handleSubmit} className="space-y-6 bg-card rounded-3xl p-10 md:p-12 shadow-premium border border-rose-gold/20 relative overflow-hidden">
+            <form onSubmit={handleSubmit} className="space-y-6 bg-card rounded-3xl p-6 sm:p-10 md:p-12 shadow-premium border border-rose-gold/20 relative overflow-hidden">
               <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-rose-gold to-transparent" />
               <div className="space-y-2">
                 <label className="font-body text-sm font-medium text-foreground flex items-center gap-2">

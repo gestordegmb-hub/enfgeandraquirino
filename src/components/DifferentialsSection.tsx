@@ -15,14 +15,14 @@ const DifferentialsSection = () => {
     <section id="diferenciais" className="section-padding bg-background">
       <div className="max-w-7xl mx-auto">
         <ScrollReveal>
-          <div className="text-center space-y-4 mb-24">
+          <div className="text-center space-y-4 mb-16 md:mb-24">
             <p className="font-body text-xs uppercase tracking-[0.3em] text-accent font-bold">Por que escolher</p>
             <h2 className="section-title">Diferenciais</h2>
             <div className="gold-divider" />
           </div>
         </ScrollReveal>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-14">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-12 lg:gap-14">
           {differentials.map((item, index) => (
             <ScrollReveal key={item.title} delay={index * 0.08}>
               <div className="group text-center space-y-6">
