@@ -77,6 +77,16 @@
 
   body {
     @apply bg-background text-foreground font-body antialiased;
+    overflow-x: hidden;
+  }
+
+  html {
+    overflow-x: hidden;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -91,7 +101,7 @@
 
 @layer components {
   .section-padding {
-    @apply px-6 py-24 md:px-12 lg:px-24 lg:py-32;
+    @apply px-5 py-20 sm:px-6 sm:py-24 md:px-12 lg:px-24 lg:py-32;
   }
 
   .section-title {

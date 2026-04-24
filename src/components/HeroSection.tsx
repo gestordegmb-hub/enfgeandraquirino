@@ -18,21 +18,21 @@ const HeroSection = () => {
 
       <div className="relative z-10 w-full section-padding">
         <div className="max-w-7xl mx-auto flex items-center justify-center md:justify-start md:pl-[42%] lg:pl-[40%]">
-          <div className="w-full md:w-auto max-w-lg space-y-7 animate-fade-in text-center">
+          <div className="w-full md:w-auto max-w-lg space-y-6 sm:space-y-7 animate-fade-in text-center">
             {/* Premium divider */}
             <div className="gold-divider-premium" />
 
-            <h1 className="font-heading text-3xl md:text-4xl lg:text-[2.75rem] font-semibold leading-[1.18] tracking-normal text-left" style={{ wordSpacing: "0.12em" }}>
+            <h1 className="font-heading text-[1.6rem] sm:text-3xl md:text-4xl lg:text-[2.75rem] font-semibold leading-[1.2] tracking-normal text-left break-words" style={{ wordSpacing: "0.08em" }}>
               <span className="text-foreground">Especialista em acelerar sua </span>
               <span className="text-gradient-bordo">recuperação pós-operatória</span>
               <span className="text-foreground"> com segurança</span>
             </h1>
 
-            <p className="inline-block font-body text-sm md:text-base font-bold uppercase tracking-[0.2em] text-accent-foreground bg-accent/90 px-5 py-2 rounded-full shadow-rose-glow">
+            <p className="inline-block font-body text-[0.7rem] sm:text-sm md:text-base font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-accent-foreground bg-accent/90 px-4 sm:px-5 py-2 rounded-full shadow-rose-glow max-w-full">
               Tratamento avançado de feridas
             </p>
 
-            <p className="font-body text-base md:text-lg text-foreground/80 leading-relaxed text-justify-pretty">
+            <p className="font-body text-sm sm:text-base md:text-lg text-foreground/80 leading-relaxed text-justify-pretty">
               Atendimento humanizado e personalizado, com foco na sua recuperação segura, eficiente e com acompanhamento especializado.
             </p>
 
@@ -41,7 +41,7 @@ const HeroSection = () => {
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="cta-pulse inline-flex items-center gap-3 bg-gradient-premium hover:opacity-95 text-primary-foreground font-body font-bold text-base md:text-lg px-10 py-4 rounded-full transition-all duration-300 hover:scale-105 shadow-premium ring-1 ring-rose-gold/40"
+                className="cta-pulse inline-flex items-center gap-3 bg-gradient-premium hover:opacity-95 text-primary-foreground font-body font-bold text-sm sm:text-base md:text-lg px-7 sm:px-10 py-3.5 sm:py-4 rounded-full transition-all duration-300 hover:scale-105 shadow-premium ring-1 ring-rose-gold/40"
               >
                 <MessageCircle className="w-5 h-5 md:w-6 md:h-6" />
                 Agendar consulta

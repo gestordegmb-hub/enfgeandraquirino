@@ -15,17 +15,17 @@ const ServicesSection = () => {
     <section id="servicos" className="section-padding bg-secondary/40">
       <div className="max-w-7xl mx-auto">
         <ScrollReveal>
-          <div className="text-center space-y-4 mb-24">
+          <div className="text-center space-y-4 mb-16 md:mb-24">
             <p className="font-body text-xs uppercase tracking-[0.3em] text-accent font-bold">Serviços</p>
             <h2 className="section-title">Como posso te ajudar</h2>
             <div className="gold-divider" />
           </div>
         </ScrollReveal>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {services.map((service, index) => (
             <ScrollReveal key={service.title} delay={index * 0.08}>
-              <div className="group premium-card hover:-translate-y-2 h-full p-10 relative overflow-hidden">
+              <div className="group premium-card hover:-translate-y-2 h-full p-7 sm:p-10 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-rose-light/20 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
                 <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/10 to-rose-gold/10 flex items-center justify-center mb-7 group-hover:from-accent/20 group-hover:to-rose-gold/30 group-hover:scale-110 transition-all duration-500 ring-1 ring-rose-gold/20">
                   <service.icon className="w-7 h-7 text-primary group-hover:text-bordo transition-colors duration-500" />
