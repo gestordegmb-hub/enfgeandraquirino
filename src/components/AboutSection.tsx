@@ -40,7 +40,7 @@ const AboutSection = () => {
               <div className="space-y-6">
                 <p className="section-subtitle !max-w-none text-justify-pretty">
                   Com ampla experiência em cuidados pós-operatórios e tratamento avançado de feridas de difícil cicatrização,
-                  Geandra Quirino oferece um atendimento que une técnica, ciência e cuidado humanizado.
+                  a Dra. Enfermeira Geandra Quirino oferece um atendimento que une técnica, ciência e cuidado humanizado.
                 </p>
                 <p className="section-subtitle !max-w-none text-justify-pretty">
                   Sua abordagem é totalmente personalizada, garantindo acompanhamento contínuo e seguro
