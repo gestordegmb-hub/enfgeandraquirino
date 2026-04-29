@@ -5,20 +5,20 @@ const WHATSAPP_URL = "https://wa.me/5522998088041?text=Olá! Vim pelo site e gos
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[80vh] md:min-h-screen flex items-center overflow-hidden">
+    <section className="relative min-h-[75vh] sm:min-h-[80vh] md:min-h-screen flex items-end md:items-center overflow-hidden">
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-no-repeat hero-bg-mobile md:!bg-center"
         style={{ backgroundImage: `url(${heroBg})` }}
       />
 
-      {/* Premium gradient overlay rosê — better text contrast */}
-      <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-l from-background/40 via-background/70 to-background/95 md:from-background/90 md:via-background/55 md:to-background/10" />
+      {/* Premium gradient overlay rosê — keeps face visible, ensures text contrast on mobile */}
+      <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-l from-background/10 via-background/55 to-background/95 md:from-background/90 md:via-background/55 md:to-background/10" />
       <div className="absolute inset-0 bg-gradient-radial-rose opacity-70" />
 
-      <div className="relative z-10 w-full section-padding pt-28 md:pt-20">
+      <div className="relative z-10 w-full section-padding pt-32 pb-10 sm:pt-28 md:pt-20 md:pb-0">
         <div className="max-w-7xl mx-auto flex items-center justify-center md:justify-start md:pl-[42%] lg:pl-[40%]">
-          <div className="w-full md:w-auto max-w-lg space-y-5 sm:space-y-7 animate-fade-in text-center">
+          <div className="w-full md:w-auto max-w-lg space-y-4 sm:space-y-7 animate-fade-in text-center">
             {/* Premium divider */}
             <div className="gold-divider-premium" />
 
