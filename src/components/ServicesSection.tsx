@@ -179,7 +179,7 @@ const ServicesSection = () => {
 
               <div className="mt-6 space-y-5">
                 {active.detail.intro && (
-                  <p className="font-body text-base text-muted-foreground leading-relaxed text-justify-pretty">
+                  <p className="font-body text-base text-muted-foreground leading-relaxed text-justify hyphens-auto">
                     {active.detail.intro}
                   </p>
                 )}
@@ -188,7 +188,7 @@ const ServicesSection = () => {
                   {active.detail.items.map((item) => (
                     <li key={item} className="flex gap-3 font-body text-sm sm:text-base text-foreground/90 leading-relaxed">
                       <span className="mt-2 w-1.5 h-1.5 rounded-full bg-rose-gold flex-shrink-0" />
-                      <span>{item}</span>
+                      <span className="text-justify hyphens-auto">{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -200,7 +200,7 @@ const ServicesSection = () => {
                       {sg.items.map((it) => (
                         <li key={it} className="flex gap-3 font-body text-sm sm:text-base text-foreground/90 leading-relaxed">
                           <span className="mt-2 w-1.5 h-1.5 rounded-full bg-rose-gold/70 flex-shrink-0" />
-                          <span>{it}</span>
+                          <span className="text-justify hyphens-auto">{it}</span>
                         </li>
                       ))}
                     </ul>
