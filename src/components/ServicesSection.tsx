@@ -71,7 +71,7 @@ const services: Service[] = [
     detail: {
       items: [
         "Realizo atendimento na comodidade de sua casa, reduzindo a necessidade de deslocamento e, consequentemente, o custo indireto para o tratamento",
-        "Realizo esse tipo de atendimento principalmente para pessoas restritas ao leito ou acamadas, que tenham dificuldade de se deslocar, mas também para aquelas que optarem, ao invés de ir para o consultório",
+        "Realizo esse tipo de atendimento principalmente para pessoas restritas ao leito ou acamadas, que tenham dificuldade de se deslocar, mas também para aquelas que optarem por não ir para o consultório.",
         "Realizo esse atendimento para pessoas que têm feridas, estão em pós-operatório, mas também que precisam de tratamento com a Ozonioterapia ou a laserterapia para dor, melhora da imunidade, tratamento coadjuvante do câncer e de doenças autoimunes",
         "Analiso todos os fatores de risco ambientais/domésticos que podem influenciar de maneira negativa para a prevenção de feridas, na cicatrização e na melhora do quadro clínico",
         "Realizo treinamento do cuidador para proporcionar cuidados mais seguros no ambiente de casa",
