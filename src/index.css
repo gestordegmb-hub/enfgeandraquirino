@@ -78,15 +78,24 @@
   body {
     @apply bg-background text-foreground font-body antialiased;
     overflow-x: hidden;
+    width: 100%;
+    min-width: 320px;
   }
 
   html {
     overflow-x: hidden;
+    width: 100%;
   }
 
   img {
     max-width: 100%;
     height: auto;
+  }
+
+  /* Prevent very long words from forcing horizontal scroll on small screens */
+  h1, h2, h3, h4, h5, h6, p, a, span, li {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -101,7 +110,7 @@
 
 @layer components {
   .section-padding {
-    @apply px-5 py-20 sm:px-6 sm:py-24 md:px-12 lg:px-24 lg:py-32;
+    @apply px-4 py-16 sm:px-6 sm:py-24 md:px-12 lg:px-24 lg:py-32;
   }
 
   .section-title {
