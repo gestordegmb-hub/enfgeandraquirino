@@ -92,10 +92,11 @@
     height: auto;
   }
 
-  /* Prevent very long words from forcing horizontal scroll on small screens */
+  /* Keep words intact: wrap only at spaces, never split a word with a hyphen */
   h1, h2, h3, h4, h5, h6, p, a, span, li {
-    overflow-wrap: break-word;
-    word-wrap: break-word;
+    overflow-wrap: normal;
+    word-break: keep-all;
+    hyphens: none;
   }
 
   h1, h2, h3, h4, h5, h6 {
