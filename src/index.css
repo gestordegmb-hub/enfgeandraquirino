@@ -188,6 +188,16 @@
     @apply w-24 h-[2px] mx-auto;
     background: linear-gradient(90deg, transparent, hsl(var(--rose-gold)), hsl(var(--bordo)), hsl(var(--rose-gold)), transparent);
   }
+
+  /* Hero background — focus on professional's face on mobile */
+  .hero-bg-mobile {
+    background-position: 70% 20%;
+  }
+  @media (min-width: 768px) {
+    .hero-bg-mobile {
+      background-position: center center;
+    }
+  }
 }
 
 #lovable-badge {

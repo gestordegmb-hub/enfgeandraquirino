@@ -5,15 +5,15 @@ const WHATSAPP_URL = "https://wa.me/5522998088041?text=Olá! Vim pelo site e gos
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
+    <section className="relative min-h-[80vh] md:min-h-screen flex items-center overflow-hidden">
       {/* Background image */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-no-repeat hero-bg-mobile md:!bg-center"
         style={{ backgroundImage: `url(${heroBg})` }}
       />
 
       {/* Premium gradient overlay rosê — better text contrast */}
-      <div className="absolute inset-0 bg-gradient-to-l from-background/90 via-background/55 to-background/10" />
+      <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-l from-background/40 via-background/70 to-background/95 md:from-background/90 md:via-background/55 md:to-background/10" />
       <div className="absolute inset-0 bg-gradient-radial-rose opacity-70" />
 
       <div className="relative z-10 w-full section-padding pt-28 md:pt-20">
