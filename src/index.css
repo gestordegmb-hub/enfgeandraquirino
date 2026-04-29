@@ -191,7 +191,13 @@
 
   /* Hero background — focus on professional's face on mobile */
   .hero-bg-mobile {
-    background-position: 70% 20%;
+    background-position: 65% 15%;
+    background-size: cover;
+  }
+  @media (max-width: 480px) {
+    .hero-bg-mobile {
+      background-position: 60% 12%;
+    }
   }
   @media (min-width: 768px) {
     .hero-bg-mobile {
