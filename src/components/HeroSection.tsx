@@ -22,7 +22,7 @@ const HeroSection = () => {
             {/* Premium divider */}
             <div className="gold-divider-premium" />
 
-            <h1 className="font-heading text-[1.5rem] xs:text-[1.7rem] sm:text-3xl md:text-4xl lg:text-[2.75rem] font-semibold leading-[1.2] tracking-normal text-center md:text-left break-words hyphens-auto" style={{ wordSpacing: "0.05em" }}>
+            <h1 className="font-heading text-[1.4rem] sm:text-3xl md:text-4xl lg:text-[2.75rem] font-semibold leading-[1.2] tracking-normal text-center md:text-left" style={{ wordSpacing: "0.05em", hyphens: "none", overflowWrap: "normal", wordBreak: "keep-all" }}>
               <span className="text-foreground">Especialista em acelerar sua </span>
               <span className="text-gradient-bordo">recuperação pós-operatória</span>
               <span className="text-foreground"> com segurança</span>
