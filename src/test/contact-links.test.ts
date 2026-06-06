@@ -54,6 +54,10 @@ describe("Validação dos links de contato (WhatsApp / Telefone)", () => {
       telFindings.push({ file: rel, match: m[0], digits: normalize(m[1]) });
     }
     for (const m of content.matchAll(DISPLAY_REGEX)) {
+      const idx = m.index ?? 0;
+      const before = content.slice(Math.max(0, idx - 40), idx);
+      // Ignora placeholders de input (ex.: campo onde o usuário digita o telefone dele).
+      if (/placeholder\s*=\s*["'`]$/.test(before)) continue;
       displayFindings.push({ file: rel, match: m[0], digits: m[1] });
     }
   }
