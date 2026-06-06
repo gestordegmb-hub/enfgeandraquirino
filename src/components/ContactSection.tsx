@@ -19,7 +19,7 @@ const ContactSection = () => {
     }
     setIsSubmitting(true);
     const body = `Olá! Vim pelo site e meu nome é ${form.name}.%0A%0A${form.message}${form.phone ? `%0A%0ATelefone: ${form.phone}` : ""}%0AE-mail: ${form.email}`;
-    const whatsappUrl = `https://wa.me/5522998088041?text=${body}`;
+    const whatsappUrl = `https://wa.me/5522997246499?text=${body}`;
     setTimeout(() => {
       window.open(whatsappUrl, "_blank");
       toast({ title: "Redirecionando para o WhatsApp..." });

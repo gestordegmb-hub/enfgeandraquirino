@@ -3,7 +3,7 @@ import { Stethoscope, HeartPulse, ShieldCheck, Home, GraduationCap, Users, Arrow
 import ScrollReveal from "./ScrollReveal";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 
-const WHATSAPP_URL = "https://wa.me/5522998088041?text=Olá! Vim pelo site e gostaria de agendar um atendimento.";
+const WHATSAPP_URL = "https://wa.me/5522997246499?text=Olá! Vim pelo site e gostaria de agendar um atendimento.";
 
 type ServiceDetail = {
   intro?: string;
