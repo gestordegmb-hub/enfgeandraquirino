@@ -12,13 +12,13 @@ const Footer = () => {
           </div>
 
           <div className="space-y-4">
-            <a
-              href="tel:+5522998088041"
-              className="flex items-center gap-3 justify-center md:justify-start text-primary-foreground/70 hover:text-accent transition-colors duration-300 font-body text-sm"
-            >
-              <Phone className="w-4 h-4" />
-              (22) 99808-8041
-            </a>
+          <a
+            href="tel:+5522997246499"
+            className="flex items-center gap-3 justify-center md:justify-start text-primary-foreground/70 hover:text-accent transition-colors duration-300 font-body text-sm"
+          >
+            <Phone className="w-4 h-4" />
+            (22) 99724-6499
+          </a>
             <a
               href="https://instagram.com/enfa.geandraquirino"
               target="_blank"
